@@ -13,7 +13,7 @@
     
     
       
-        <title>Run - wasp</title>
+        <title>Plugin 101 - wasp</title>
       
     
     
@@ -61,6 +61,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#plugin-101" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -90,7 +95,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Run
+              Plugin 101
             
           </span>
         </div>
@@ -211,12 +216,14 @@
 
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" checked>
       
       
       
@@ -239,7 +246,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../gazebo/camera/" class="md-nav__link">
+      <a href="../camera/" class="md-nav__link">
         Camera
       </a>
     </li>
@@ -253,7 +260,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../gazebo/gui_plugin/" class="md-nav__link">
+      <a href="../gui_plugin/" class="md-nav__link">
         Gui Plugin
       </a>
     </li>
@@ -267,7 +274,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../gazebo/model_plugin/" class="md-nav__link">
+      <a href="../model_plugin/" class="md-nav__link">
         Model Plugin
       </a>
     </li>
@@ -279,11 +286,78 @@
               
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../../gazebo/plugins/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Plugin 101
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         Plugin 101
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#hello-plugins" class="md-nav__link">
+    hello plugins
+  </a>
+  
+    <nav class="md-nav" aria-label="hello plugins">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#world-plugin" class="md-nav__link">
+    world plugin
+  </a>
+  
+    <nav class="md-nav" aria-label="world plugin">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#run" class="md-nav__link">
+    Run
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -472,14 +546,12 @@
 
   
   
-    
-  
   
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" >
       
       
       
@@ -502,7 +574,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../gazebo/" class="md-nav__link">
+      <a href="../../usage/gazebo/" class="md-nav__link">
         Gazebo
       </a>
     </li>
@@ -514,19 +586,11 @@
               
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../usage/run/" class="md-nav__link">
         Run
       </a>
-      
     </li>
   
 
@@ -538,7 +602,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../sitl/" class="md-nav__link">
+      <a href="../../usage/sitl/" class="md-nav__link">
         Sitl
       </a>
     </li>
@@ -559,15 +623,147 @@
               </div>
             
             
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#hello-plugins" class="md-nav__link">
+    hello plugins
+  </a>
+  
+    <nav class="md-nav" aria-label="hello plugins">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#world-plugin" class="md-nav__link">
+    world plugin
+  </a>
+  
+    <nav class="md-nav" aria-label="world plugin">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#run" class="md-nav__link">
+    Run
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
           
           <div class="md-content" data-md-component="content">
             <article class="md-content__inner md-typeset">
               
                 
 
-  <h1>Run</h1>
-
-<p><img alt="" src="../../images/2022-01-12-22-14-08.png" /></p>
+<h1 id="plugin-101">Plugin 101<a class="headerlink" href="#plugin-101" title="Permanent link">&para;</a></h1>
+<p>There are currently 6 types of plugins</p>
+<ul>
+<li>World</li>
+<li>Model</li>
+<li>Sensor</li>
+<li>System</li>
+<li>Visual</li>
+<li>GUI</li>
+</ul>
+<h2 id="hello-plugins">hello plugins<a class="headerlink" href="#hello-plugins" title="Permanent link">&para;</a></h2>
+<h3 id="world-plugin">world plugin<a class="headerlink" href="#world-plugin" title="Permanent link">&para;</a></h3>
+<div class="highlight"><span class="filename">hello_world.cc</span><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;gazebo/gazebo.hh&gt;</span><span class="cp"></span>
+<a id="__codelineno-0-2" name="__codelineno-0-2"></a>
+<a id="__codelineno-0-3" name="__codelineno-0-3"></a><span class="k">namespace</span><span class="w"> </span><span class="nn">gazebo</span><span class="w"></span>
+<a id="__codelineno-0-4" name="__codelineno-0-4"></a><span class="p">{</span><span class="w"></span>
+<a id="__codelineno-0-5" name="__codelineno-0-5"></a><span class="w">    </span><span class="k">class</span> <span class="nc">WorldPluginTutorial</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="k">public</span><span class="w"> </span><span class="n">WorldPlugin</span><span class="w"></span>
+<a id="__codelineno-0-6" name="__codelineno-0-6"></a><span class="w">    </span><span class="p">{</span><span class="w"></span>
+<a id="__codelineno-0-7" name="__codelineno-0-7"></a><span class="w">    </span><span class="k">public</span><span class="o">:</span><span class="w"></span>
+<a id="__codelineno-0-8" name="__codelineno-0-8"></a><span class="w">        </span><span class="n">WorldPluginTutorial</span><span class="p">()</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="n">WorldPlugin</span><span class="p">()</span><span class="w"></span>
+<a id="__codelineno-0-9" name="__codelineno-0-9"></a><span class="w">        </span><span class="p">{</span><span class="w"></span>
+<a id="__codelineno-0-10" name="__codelineno-0-10"></a><span class="w">            </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;Hello World!</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span><span class="w"></span>
+<a id="__codelineno-0-11" name="__codelineno-0-11"></a><span class="w">            </span><span class="n">gzdbg</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;debug&quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span><span class="w"></span>
+<a id="__codelineno-0-12" name="__codelineno-0-12"></a><span class="w">            </span><span class="n">gzmsg</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;message&quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span><span class="w"></span>
+<a id="__codelineno-0-13" name="__codelineno-0-13"></a><span class="w">            </span><span class="n">gzwarn</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;warning&quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span><span class="w"></span>
+<a id="__codelineno-0-14" name="__codelineno-0-14"></a><span class="w">            </span><span class="n">gzerr</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;error&quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span><span class="w"></span>
+<a id="__codelineno-0-15" name="__codelineno-0-15"></a><span class="w">        </span><span class="p">}</span><span class="w"></span>
+<a id="__codelineno-0-16" name="__codelineno-0-16"></a>
+<a id="__codelineno-0-17" name="__codelineno-0-17"></a><span class="w">    </span><span class="k">public</span><span class="o">:</span><span class="w"></span>
+<a id="__codelineno-0-18" name="__codelineno-0-18"></a><span class="w">        </span><span class="kt">void</span><span class="w"> </span><span class="n">Load</span><span class="p">(</span><span class="n">physics</span><span class="o">::</span><span class="n">WorldPtr</span><span class="w"> </span><span class="n">_world</span><span class="p">,</span><span class="w"> </span><span class="n">sdf</span><span class="o">::</span><span class="n">ElementPtr</span><span class="w"> </span><span class="n">_sdf</span><span class="p">)</span><span class="w"></span>
+<a id="__codelineno-0-19" name="__codelineno-0-19"></a><span class="w">        </span><span class="p">{</span><span class="w"></span>
+<a id="__codelineno-0-20" name="__codelineno-0-20"></a><span class="w">        </span><span class="p">}</span><span class="w"></span>
+<a id="__codelineno-0-21" name="__codelineno-0-21"></a><span class="w">    </span><span class="p">};</span><span class="w"></span>
+<a id="__codelineno-0-22" name="__codelineno-0-22"></a><span class="w">    </span><span class="n">GZ_REGISTER_WORLD_PLUGIN</span><span class="p">(</span><span class="n">WorldPluginTutorial</span><span class="p">)</span><span class="w"></span>
+<a id="__codelineno-0-23" name="__codelineno-0-23"></a><span class="p">}</span><span class="w"></span>
+</code></pre></div>
+<table class="highlighttable"><tr><th colspan="2" class="filename"><div class="highlight"><span class="filename">CMakeLists.txt</span></div></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-1-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-1-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-1-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-1-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-1-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-1-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-1-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-1-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-1-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-1-10">10</a></span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1"></a><span class="nb">find_package</span><span class="p">(</span><span class="s">gazebo</span> <span class="s">REQUIRED</span><span class="p">)</span>
+<a id="__codelineno-1-2" name="__codelineno-1-2"></a><span class="nb">include_directories</span><span class="p">(</span><span class="o">${</span><span class="nv">GAZEBO_INCLUDE_DIRS</span><span class="o">}</span><span class="p">)</span>
+<a id="__codelineno-1-3" name="__codelineno-1-3"></a><span class="nb">link_directories</span><span class="p">(</span><span class="o">${</span><span class="nv">GAZEBO_LIBRARY_DIRS</span><span class="o">}</span><span class="p">)</span>
+<a id="__codelineno-1-4" name="__codelineno-1-4"></a><span class="nb">list</span><span class="p">(</span><span class="s">APPEND</span> <span class="s">CMAKE_CXX_FLAGS</span> <span class="s2">&quot;${GAZEBO_CXX_FLAGS}&quot;</span><span class="p">)</span>
+<a id="__codelineno-1-5" name="__codelineno-1-5"></a>
+<a id="__codelineno-1-6" name="__codelineno-1-6"></a><span class="hll"><span class="nb">SET</span><span class="p">(</span><span class="s">CMAKE_INSTALL_PREFIX</span> <span class="o">${</span><span class="nv">CMAKE_SOURCE_DIR</span><span class="o">}</span><span class="p">)</span>
+</span><a id="__codelineno-1-7" name="__codelineno-1-7"></a>
+<a id="__codelineno-1-8" name="__codelineno-1-8"></a><span class="nb">add_library</span><span class="p">(</span><span class="s">hello_world</span> <span class="s">SHARED</span> <span class="s">hello_world/hello_world.cc</span><span class="p">)</span>
+<a id="__codelineno-1-9" name="__codelineno-1-9"></a><span class="nb">target_link_libraries</span><span class="p">(</span><span class="s">hello_world</span> <span class="o">${</span><span class="nv">GAZEBO_LIBRARIES</span><span class="o">}</span><span class="p">)</span>
+<a id="__codelineno-1-10" name="__codelineno-1-10"></a><span class="hll"><span class="nb">install</span><span class="p">(</span><span class="s">TARGETS</span> <span class="s">hello_world</span> <span class="s">DESTINATION</span> <span class="s">bin</span><span class="p">)</span>
+</span></code></pre></div>
+</td></tr></table>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><code>make install</code> copy binaries to <code>bin</code> project folder
+gazebo environment  variable <code>GAZEBO_PLUGIN_PATH</code> need to include this folder</p>
+</div>
+<div class="highlight"><span class="filename">hello.world</span><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1"></a><span class="cp">&lt;?xml version=&quot;1.0&quot;?&gt;</span>
+<a id="__codelineno-2-2" name="__codelineno-2-2"></a><span class="nt">&lt;sdf</span> <span class="na">version=</span><span class="s">&quot;1.4&quot;</span><span class="nt">&gt;</span>
+<a id="__codelineno-2-3" name="__codelineno-2-3"></a>  <span class="nt">&lt;world</span> <span class="na">name=</span><span class="s">&quot;default&quot;</span><span class="nt">&gt;</span>
+<a id="__codelineno-2-4" name="__codelineno-2-4"></a>    <span class="nt">&lt;gui&gt;</span>
+<a id="__codelineno-2-5" name="__codelineno-2-5"></a>      <span class="nt">&lt;plugin</span> <span class="na">name=</span><span class="s">&quot;sample&quot;</span> <span class="na">filename=</span><span class="s">&quot;libhello_gui.so&quot;</span><span class="nt">/&gt;</span>
+<a id="__codelineno-2-6" name="__codelineno-2-6"></a>    <span class="nt">&lt;/gui&gt;</span>
+<a id="__codelineno-2-7" name="__codelineno-2-7"></a>    <span class="nt">&lt;plugin</span> <span class="na">name=</span><span class="s">&quot;hello_world&quot;</span> <span class="na">filename=</span><span class="s">&quot;libhello_world.so&quot;</span><span class="nt">/&gt;</span>
+<a id="__codelineno-2-8" name="__codelineno-2-8"></a>  <span class="nt">&lt;/world&gt;</span>
+<a id="__codelineno-2-9" name="__codelineno-2-9"></a><span class="nt">&lt;/sdf&gt;</span>
+</code></pre></div>
+<h4 id="run">Run<a class="headerlink" href="#run" title="Permanent link">&para;</a></h4>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1"></a>gazebo --verbose worlds/hello.world
+</code></pre></div>
+<p><img alt="" src="../../images/2022-01-14-08-43-49.png" /></p>
 
               
             </article>
@@ -581,7 +777,7 @@
     <nav class="md-footer__inner md-grid" aria-label="Footer">
       
         
-        <a href="../gazebo/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Gazebo" rel="prev">
+        <a href="../model_plugin/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Model Plugin" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
           </div>
@@ -590,20 +786,20 @@
               <span class="md-footer__direction">
                 Previous
               </span>
-              Gazebo
+              Model Plugin
             </div>
           </div>
         </a>
       
       
         
-        <a href="../sitl/" class="md-footer__link md-footer__link--next" aria-label="Next: Sitl" rel="next">
+        <a href="../../installes/ardupilot/" class="md-footer__link md-footer__link--next" aria-label="Next: Ardupilot copter" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              Sitl
+              Ardupilot copter
             </div>
           </div>
           <div class="md-footer__button md-icon">
