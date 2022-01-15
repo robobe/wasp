@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<sdf version="1.6">
+    <actor name="animated_box">
+        <static>false</static>
+        <link name="link">
+            <visual name="visual">
+                <geometry>
+                    <box>
+                        <size>0.2 0.2 0.2</size>
+                    </box>
+                </geometry>
+            </visual>
+        </link>
+        <script>
+            <loop>true</loop>
+            <delay_start>0.0</delay_start>
+            <auto_start>true</auto_start>
+            <trajectory id="0" type="square">
+                <waypoint>
+                    <time>0.0</time>
+                    <pose>4 4 1 0 0 0</pose>
+                </waypoint>
+                <waypoint>
+                    <time>4.0</time>
+                    <pose>-4 4 1 0 0 0</pose>
+                </waypoint>
+                <waypoint>
+                    <time>8.0</time>
+                    <pose>-4 -4 1 0 0 0</pose>
+                </waypoint>
+                <waypoint>
+                    <time>12.0</time>
+                    <pose>4 -4 1 0 0 0</pose>
+                </waypoint>
+                <waypoint>
+                    <time>16.0</time>
+                    <pose>4 4 1 0 0 0</pose>
+                </waypoint>
+            </trajectory>
+        </script>
+
+    </actor>
+</sdf>

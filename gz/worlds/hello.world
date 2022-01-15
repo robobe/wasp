@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<sdf version="1.4">
+  <world name="default">
+    <gui>
+      <plugin name="sample" filename="libhello_gui.so"/>
+    </gui>
+    <plugin name="hello_world" filename="libhello_world.so"/>
+  </world>
+</sdf>

@@ -1,3 +1,13 @@
 {
-    "pasteImage.path": "${projectRoot}/docs/images"
+    "pasteImage.path": "${projectRoot}/docs/images",
+    "autoSnippet.snippets": [
+        {
+            "pattern": "**/model.config",
+            "snippet": "gazebo_model_config"
+        }
+    ],
+    "files.associations": {
+        "*.sdf": "xml",
+        "*.world": "xml",
+    }
 }

@@ -60,4 +60,4 @@ markdown_extensions:
 plugins:
   - search
   - code_include:
-      base_path: /home/user/projects/python_cookbook
+      base_path: /home/user/projects/wasp/

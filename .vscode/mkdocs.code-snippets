@@ -1,0 +1,27 @@
+{
+    "mk_code_include": {
+        "prefix": "mk_code_inc",
+        "body": [
+          "```${1|python,json,cpp,cmake,xml,bash|} title=\"${2}\" linenums=\"1\" hl_lines=\"\"",
+          "{{include(\"${3}\")}}",
+          "```"
+        ],
+        "description": "mk_code_include"
+    },
+    "mk_code_snippet": {
+        "prefix": "mk_code_snippet",
+        "body": [
+            "```${1|python,json,cpp,cmake,xml,bash|} title=\"${2}\" linenums=\"1\" hl_lines=\"\"",
+          "```"
+        ],
+        "description": "mk_code_include"
+    },
+    "mk_code_simple": {
+        "prefix": "mk_code_simple",
+        "body": [
+          "```${1|python,json,cpp,cmake,xml,bash|} title=\"${2}\"",
+          "```"
+        ],
+        "description": "mk_code_simple"
+    }
+}
