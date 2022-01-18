@@ -1,0 +1,30 @@
+<?xml version="1.0" ?>
+<sdf version="1.5"
+    xmlns:xacro="http://www.ros.org/wiki/xacro">
+    <xacro:include filename="demo.prop.xacro" />
+    <xacro:include filename="demo.macro.xacro" />
+    
+    <model name="camera">
+        <pose>0 0 0.05 0 1.57 0</pose>
+        <link name="link">
+            <inertial>
+                <mass>${mass}</mass>
+                <xacro:box_inertia m="${mass}" x="${side}" y="${side}" z="${side}"/>
+            </inertial>
+            <collision name="collision">
+                <geometry>
+                    <box>
+                        <size>${side} ${side} ${side}</size>
+                    </box>
+                </geometry>
+            </collision>
+            <visual name="visual">
+                <geometry>
+                    <box>
+                        <size>${side} ${side} ${side}</size>
+                    </box>
+                </geometry>
+            </visual>
+        </link>
+    </model>
+</sdf>

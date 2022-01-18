@@ -20,12 +20,13 @@ def generate_launch_description():
 ## setup.py
 - Add action to data_file copy launch folder to `pkg` folder (install/my_python_pkg/share/my_python_pkg/)
 
-```
+```python
 data_files=[
-    (os.path.join('share', package_name), glob('launch/*.launch.py'))
+    (os.path.join('share', package_name, "launch"), glob('launch/*.launch.py'))
 ],
 
 ```
+
 !!! Note
     Add import to os and glob
     ```
@@ -36,9 +37,18 @@ data_files=[
 
 ##  usage
 ```bash
+#ros2 launch <package_name> <launch_file_name>
 ros2 launch my_python_pkg simple.launch.py
+```
+
+---
+
+# Include other launch file
+```python title="parent.launch.py" linenums="1" hl_lines="2-5"
+{{include("src/my_python_pkg/launch/parent.launch.py")}}
 ```
 ---
 
 # References
 - [Launch file](https://roboticsbackend.com/ros2-launch-file-example/)
+- [ROS2 launch](https://docs.ros.org/en/rolling/Tutorials/Launch/Creating-Launch-Files.html)

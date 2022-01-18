@@ -6,6 +6,8 @@ class MyNode(Node):
     def __init__(self):
         super().__init__("my_node")
         self.get_logger().info("This node just says 'Hello'")
+        self.get_logger().warning("This node just says 'Hello'")
+        self.get_logger().error("This node just says 'Hello'")
 
 
 def main(args=None):

@@ -1,5 +1,5 @@
 #include <gazebo/physics/Model.hh>
-#include <wasp_gazebo_pkg/gazebo_ros_template.hpp>
+#include <wasp_pkg/gazebo_ros_template.hpp>
 #include <gazebo_ros/node.hpp>
 #include <rclcpp/rclcpp.hpp>
 #include <memory>
@@ -37,9 +37,11 @@ namespace wasp_gazebo
         // for example:
         RCLCPP_INFO(impl_->ros_node_->get_logger(), model->GetName().c_str());
         RCLCPP_INFO(impl_->ros_node_->get_logger(), "hello world");
-
-        // Create a connection so the OnUpdate function is called at every simulation
-        // iteration. Remove this call, the connection and the callback if not needed.
+        RCLCPP_INFO(impl_->ros_node_->get_logger(), "hello world1");
+        RCLCPP_INFO(impl_->ros_node_->get_logger(), "hello world2");
+        RCLCPP_ERROR(impl_->ros_node_->get_logger(), "ros error ");
+        gzerr << "gazebo demo error" << std::endl;
+        gzmsg << "message" << std::endl;
         impl_->update_connection_ = gazebo::event::Events::ConnectWorldUpdateBegin(
             std::bind(&GazeboRosTemplate::OnUpdate, this));
     }

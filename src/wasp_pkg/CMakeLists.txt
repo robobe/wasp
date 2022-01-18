@@ -1,19 +1,24 @@
 cmake_minimum_required(VERSION 3.5)
-project(wasp_gazebo_pkg)
+project(wasp_pkg)
+
+# Default to C99
+if(NOT CMAKE_C_STANDARD)
+  set(CMAKE_C_STANDARD 99)
+endif()
 
 # Default to C++14
 if(NOT CMAKE_CXX_STANDARD)
   set(CMAKE_CXX_STANDARD 14)
 endif()
+
 if(CMAKE_COMPILER_IS_GNUCXX OR CMAKE_CXX_COMPILER_ID MATCHES "Clang")
-  # we dont use add_compile_options with pedantic in message packages
-  # because the Python C extensions dont comply with it
-  set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wall -Wextra -Wpedantic -Wno-inconsistent-missing-override")
+  add_compile_options(-Wall -Wextra -Wpedantic)
 endif()
 
+# find dependencies
+find_package(ament_cmake REQUIRED)
 find_package(gazebo REQUIRED)
 find_package(gazebo_dev REQUIRED)
-find_package(ament_cmake REQUIRED)
 find_package(rclcpp REQUIRED)
 find_package(gazebo_ros REQUIRED)
 # gazebo_ros_template
@@ -34,5 +39,12 @@ ARCHIVE DESTINATION lib
 
 install(DIRECTORY
   worlds
-  DESTINATION share/${PROJECT_NAME}/
+  DESTINATION share/${PROJECT_NAME}
 )
+
+install(DIRECTORY
+  models
+  DESTINATION share/${PROJECT_NAME}
+)
+
+ament_package()

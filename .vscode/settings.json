@@ -8,6 +8,7 @@
     ],
     "files.associations": {
         "*.sdf": "xml",
+        "*.xacro": "xml",
         "*.world": "xml",
     },
     "python.formatting.provider": "black",
