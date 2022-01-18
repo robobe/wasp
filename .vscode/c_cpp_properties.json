@@ -11,12 +11,15 @@
                 "/usr/include/ignition/fuel_tools4",
                 "/usr/include/ignition/msgs5",
                 "/usr/include/ignition/transport8",
-                "/usr/include/x86_64-linux-gnu/qt5"
+                "/usr/include/x86_64-linux-gnu/qt5",
+                "/usr/include/eigen3",
+                "/opt/ros/foxy/include/",
+                "/usr/include/dart/utils"
             ],
             "defines": [],
             "compilerPath": "/usr/bin/gcc",
             "cStandard": "gnu17",
-            "cppStandard": "gnu++11",
+            "cppStandard": "gnu++14",
             "intelliSenseMode": "linux-gcc-x64"
         }
     ],

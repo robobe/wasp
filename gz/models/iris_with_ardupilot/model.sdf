@@ -381,6 +381,10 @@
     -->
 
     <!-- plugins -->
+    <plugin name="opticalflow_mockup_plugin" filename="liboptical_flow_mockup.so">
+      <robotNamespace></robotNamespace>
+      <pubRate>20</pubRate>
+  </plugin>
     <plugin name="rotor_0_blade_1" filename="libLiftDragPlugin.so">
       <a0>0.3</a0>
       <alpha_stall>1.4</alpha_stall>

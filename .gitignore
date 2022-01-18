@@ -1,4 +1,9 @@
 /bin
 /site
 /build
+/gz/build
+/gz/bin
 /venv
+/log
+/install
+/build.bk
