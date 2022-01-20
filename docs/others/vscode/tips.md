@@ -37,6 +37,30 @@ autoSnippet.snippets: [
 
 ---
 
+## Run on Save
+[ext install emeraldwalk.RunOnSave](https://marketplace.visualstudio.com/items?itemName=emeraldwalk.RunOnSave)
+[variables-reference](https://code.visualstudio.com/docs/editor/variables-reference)
+
+```
+${fileBasenameNoExt} : file name without extension
+```
+
+!!! Note
+	`fileBasenameNoExt` replace `fileBasenameNoExtension`
+
+```
+"emeraldwalk.runonsave": {
+	"commands": [
+		{
+			"match": "\\.sdf.xaco$",
+			"cmd": "export PYTHONPATH=/opt/ros/foxy/lib/python3.8/site-packages && /opt/ros/foxy/bin/xacro ${file} -o ${fileDirname}/${fileBasenameNoExt}"
+		}
+	]
+}
+```
+
+---
+
 # File Associations
 Assign file ext to language  
 for example gazebo `sdf` and `world` files to `xml` language

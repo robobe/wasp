@@ -4,8 +4,20 @@
         {
             "pattern": "**/model.config",
             "snippet": "gazebo_model_config"
+        },
+        {
+            "pattern": "**/model.sdf",
+            "snippet": "gazebo_model_sdf"
         }
     ],
+    "emeraldwalk.runonsave": {
+        "commands": [
+            {
+                "match": ".sdf.xacro",
+                "cmd": "export PYTHONPATH=/opt/ros/foxy/lib/python3.8/site-packages && /opt/ros/foxy/bin/xacro ${file} -o ${fileDirname}/${fileBasenameNoExt}"
+            }
+        ]
+    },
     "files.associations": {
         "*.sdf": "xml",
         "*.xacro": "xml",

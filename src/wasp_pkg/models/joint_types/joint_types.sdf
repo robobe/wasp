@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<sdf version="1.6">
+    <model name="demo_joint_types">
+        <!-- A Heavy base keeps the joints from falling over -->
+        <link name="heavy_base">
+            <!-- position the base such that the bottom touches the floor -->
+            <pose>0 0 0.05 0 0 0</pose>
+            <inertial>
+                <mass>100</mass> <!-- kg -->
+                <inertia>
+                    <!-- (mass / 12) * (y*y + z*z) -->
+                    <ixx>8.4167</ixx>
+                    <ixy>0</ixy>
+                    <ixz>0</ixz>
+                    <!-- (mass / 12) * (x*x + z*z) -->
+                    <iyy>40.417</iyy>
+                    <iyz>0</iyz>
+                    <!-- (mass / 12) * (y*y + x*x) -->
+                    <izz>48.667</izz>
+                </inertia>
+            </inertial>
+            <!-- Same geometry as visual -->
+            <collision name="heavy_base_collision">
+                <geometry>
+                    <box>
+                        <size>2.2 1 0.1</size>
+                    </box>
+                </geometry>
+            </collision>
+            <!-- Same geometry as collision -->
+            <visual name="heavy_base_visual">
+                <geometry>
+                    <box>
+                        <size>2.2 1 0.1</size>
+                    </box>
+                </geometry>
+               
+            </visual>
+        </link>
+    </model>
+</sdf>

@@ -23,6 +23,16 @@
 		],
 		"description": "Log output to console"
 	},
+	"gazebo_model_sdf": {
+		"prefix": "gz_model",
+		"body": [
+		  "<?xml version=\"1.0\"?>",
+		  "<sdf version=\"${1|1.5,1.6|}\">",
+		  "<model name=\"${2}\">",
+		  "</model>",
+		  "</sdf>"
+		]
+	},
 	"gazebo_model_config": {
 		"prefix": "gz_config",
 		"body": [
