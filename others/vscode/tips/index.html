@@ -366,6 +366,20 @@
   
   
     <li class="md-nav__item">
+      <a href="../../../ROS2/gazebo/xacro/vscode/" class="md-nav__link">
+        VScode
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../../ROS2/gazebo/xacro/xacro101/" class="md-nav__link">
         xacro 101
       </a>
@@ -847,6 +861,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#run-on-save" class="md-nav__link">
+    Run on Save
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -978,6 +999,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#run-on-save" class="md-nav__link">
+    Run on Save
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1024,13 +1052,32 @@
 <a id="__codelineno-1-18" name="__codelineno-1-18"></a>      <span class="p">}</span>
 </code></pre></div>
 <hr />
+<h2 id="run-on-save">Run on Save<a class="headerlink" href="#run-on-save" title="Permanent link">&para;</a></h2>
+<p><a href="https://marketplace.visualstudio.com/items?itemName=emeraldwalk.RunOnSave">ext install emeraldwalk.RunOnSave</a>
+<a href="https://code.visualstudio.com/docs/editor/variables-reference">variables-reference</a></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1"></a>${fileBasenameNoExt} : file name without extension
+</code></pre></div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><code>fileBasenameNoExt</code> replace <code>fileBasenameNoExtension</code></p>
+</div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1"></a>&quot;emeraldwalk.runonsave&quot;: {
+<a id="__codelineno-3-2" name="__codelineno-3-2"></a>    &quot;commands&quot;: [
+<a id="__codelineno-3-3" name="__codelineno-3-3"></a>        {
+<a id="__codelineno-3-4" name="__codelineno-3-4"></a>            &quot;match&quot;: &quot;\\.sdf.xaco$&quot;,
+<a id="__codelineno-3-5" name="__codelineno-3-5"></a>            &quot;cmd&quot;: &quot;export PYTHONPATH=/opt/ros/foxy/lib/python3.8/site-packages &amp;&amp; /opt/ros/foxy/bin/xacro ${file} -o ${fileDirname}/${fileBasenameNoExt}&quot;
+<a id="__codelineno-3-6" name="__codelineno-3-6"></a>        }
+<a id="__codelineno-3-7" name="__codelineno-3-7"></a>    ]
+<a id="__codelineno-3-8" name="__codelineno-3-8"></a>}
+</code></pre></div>
+<hr />
 <h1 id="file-associations">File Associations<a class="headerlink" href="#file-associations" title="Permanent link">&para;</a></h1>
 <p>Assign file ext to language<br />
 for example gazebo <code>sdf</code> and <code>world</code> files to <code>xml</code> language</p>
-<div class="highlight"><span class="filename">settings.json</span><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1"></a><span class="nt">&quot;files.associations&quot;</span><span class="p">:</span> <span class="p">{</span>
-<a id="__codelineno-2-2" name="__codelineno-2-2"></a>        <span class="nt">&quot;*.sdf&quot;</span><span class="p">:</span> <span class="s2">&quot;xml&quot;</span><span class="p">,</span>
-<a id="__codelineno-2-3" name="__codelineno-2-3"></a>        <span class="nt">&quot;*.world&quot;</span><span class="p">:</span> <span class="s2">&quot;xml&quot;</span><span class="p">,</span>
-<a id="__codelineno-2-4" name="__codelineno-2-4"></a>    <span class="p">}</span>
+<div class="highlight"><span class="filename">settings.json</span><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1"></a><span class="nt">&quot;files.associations&quot;</span><span class="p">:</span> <span class="p">{</span>
+<a id="__codelineno-4-2" name="__codelineno-4-2"></a>        <span class="nt">&quot;*.sdf&quot;</span><span class="p">:</span> <span class="s2">&quot;xml&quot;</span><span class="p">,</span>
+<a id="__codelineno-4-3" name="__codelineno-4-3"></a>        <span class="nt">&quot;*.world&quot;</span><span class="p">:</span> <span class="s2">&quot;xml&quot;</span><span class="p">,</span>
+<a id="__codelineno-4-4" name="__codelineno-4-4"></a>    <span class="p">}</span>
 </code></pre></div>
 
               
