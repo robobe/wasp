@@ -19,4 +19,14 @@ add_library(optical_flow_mockup SHARED optical_flow_mockup/optical_flow_mockup.c
 target_link_libraries(optical_flow_mockup ${GAZEBO_LIBRARIES} sensor_msgs)
 install(TARGETS optical_flow_mockup DESTINATION bin)
 
+#KeysToJoints
+add_library(KeysToJointsPlugin SHARED KeysToJoints/KeysToJointsPlugin.cc)
+target_link_libraries(KeysToJointsPlugin ${GAZEBO_LIBRARIES})
+install(TARGETS KeysToJointsPlugin DESTINATION bin)
+
+# Velodyne
+add_library(VelodynePlugin SHARED VelodynePlugin/velodyne_plugin.cc)
+target_link_libraries(VelodynePlugin ${GAZEBO_LIBRARIES})
+install(TARGETS VelodynePlugin DESTINATION ../bin)
+
 add_subdirectory(hello_gui)
