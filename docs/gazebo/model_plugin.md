@@ -1,3 +1,11 @@
+---
+title: gazebo plugins
+tags:
+    - gazebo
+    - plugins
+---
+
+
 # Model Plugin
 
 ```cpp title="model_push.hh"

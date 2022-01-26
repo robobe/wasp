@@ -1,3 +1,10 @@
+---
+title: gazebo camera sensor
+tags:
+    - gazebo
+    - camera
+---
+
 # Camera
 
 ```xml title="camera.world" 
