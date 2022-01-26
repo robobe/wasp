@@ -1,5 +1,5 @@
 
-
+set(CMAKE_BUILD_TYPE Debug)
 
 find_package(gazebo REQUIRED)
 include_directories(${GAZEBO_INCLUDE_DIRS})
@@ -27,6 +27,6 @@ install(TARGETS KeysToJointsPlugin DESTINATION bin)
 # Velodyne
 add_library(VelodynePlugin SHARED VelodynePlugin/velodyne_plugin.cc)
 target_link_libraries(VelodynePlugin ${GAZEBO_LIBRARIES})
-install(TARGETS VelodynePlugin DESTINATION ../bin)
+install(TARGETS VelodynePlugin DESTINATION bin)
 
 add_subdirectory(hello_gui)

@@ -29,13 +29,14 @@ namespace gazebo
                 this->joint->GetScopedName(), this->pid);
 
             // Default to zero velocity
-            double velocity = 0;
+            double velocity = 10;
 
             // Check that the velocity element exists, then read the value
             if (_sdf->HasElement("velocity"))
                 velocity = _sdf->Get<double>("velocity");
 
             this->SetVelocity(velocity);
+            this->node = transport::NodePtr(new transport::Node());
             this->node->Init(this->model->GetWorld()->Name());
 
             // Create a topic name
