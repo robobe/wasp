@@ -1,5 +1,0 @@
-<?xml version="1.0"?>
-<root xmlns:xacro="http://ros.org/wiki/xacro">
-    <xacro:property name="side" value="0.1" />
-    <xacro:property name="mass" value="0.1" />
-</root>

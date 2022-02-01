@@ -163,8 +163,8 @@
       <limit>
 
         <!-- Use a very large number to indicate a continuous revolution -->
-        <lower>-10000000000000000</lower>
-        <upper>10000000000000000</upper>
+        <lower>-1.57</lower>
+        <upper>1.57</upper>
       </limit>
     </axis>
   </joint>

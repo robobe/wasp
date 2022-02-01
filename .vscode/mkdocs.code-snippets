@@ -23,5 +23,30 @@
           "```"
         ],
         "description": "mk_code_simple"
+    },
+    "mk_header": {
+        "prefix": "mk_header",
+        "body": [
+          "---",
+          "title: ${1}",
+          "tags:",
+          "\t- ${2:tag}",
+          "---",
+          "\n"
+        ],
+        "description": "mk_header, title and tags"
+    },
+    "mk_image_caption": {
+        "prefix": "mk_img_cap",
+        "body": [
+          "<figure markdown>",
+          "![](${1:image path})",
+          "<figcaption>",
+          "${2:caption}",
+          "</figcaption>",
+          "</figure>",
+          "\n"
+        ],
+        "description": "insert image with captions"
     }
 }
