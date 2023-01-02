@@ -228,10 +228,13 @@ class MyNode(Node):
             self.get_logger().info(" Waiting for mode change ...")
             time.sleep(1)
 
-calib_path  = os.path.dirname(__file__)
+from ament_index_python.packages import get_package_share_directory
+# may raise PackageNotFoundError
+pkg = get_package_share_directory('wasp')
+calib_path  = os.path.join(pkg, "config")
 camera_matrix       = np.loadtxt(calib_path+'/cameraMatrix_raspi.txt', delimiter=',')
 camera_distortion   = np.loadtxt(calib_path+'/cameraDistortion_raspi.txt', delimiter=',')                                      
-aruco_tracker       = ArucoSingleTracker(id_to_find=3, marker_size=5, show_video=False, 
+aruco_tracker       = ArucoSingleTracker(id_to_find=3, marker_size=100, show_video=False, 
                 camera_matrix=camera_matrix, camera_distortion=camera_distortion)
 
 def main(args=None):
