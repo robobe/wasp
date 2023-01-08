@@ -23,7 +23,8 @@ setup(
     entry_points={
         'console_scripts': [
             "test=wasp.test_connect:main",
-            "test_loop=wasp.test_loop:main"
+            "test_loop=wasp.test_loop:main",
+            "test_range=wasp.test_range:main"
         ],
     },
 )
